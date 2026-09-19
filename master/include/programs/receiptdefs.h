@@ -1,0 +1,8 @@
+#ifndef RECEIPTDEFS_H
+#define RECEIPTDEFS_H
+
+#define RECTFILE_INIT   0x00
+#define RECTFILE_OPEN   0x01
+#define RECTFILE_DELETE 0x02
+
+#endif // RECEIPTDEFS_H
