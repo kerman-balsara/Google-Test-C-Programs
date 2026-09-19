@@ -1,0 +1,145 @@
+==19186== Memcheck, a memory error detector
+==19186== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==19186== Using Valgrind-3.22.0-bd4db67b1d-20231031 and LibVEX; rerun with -h for copyright info
+==19186== Command: build/client 9 bankserver N
+==19186== Parent PID: 19185
+==19186== 
+--19186-- 
+--19186-- Valgrind options:
+--19186--    --leak-check=full
+--19186--    --show-leak-kinds=all
+--19186--    --track-origins=yes
+--19186--    --verbose
+--19186--    --log-file=vgclient.txt
+--19186-- Contents of /proc/version:
+--19186--   Linux version 6.14.0-37-generic (buildd@lcy02-amd64-031) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #37~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 10:25:38 UTC 2
+--19186-- 
+--19186-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand-rdseed
+--19186-- Page sizes: currently 4096, max supported 4096
+--19186-- Valgrind library directory: /usr/libexec/valgrind
+--19186-- Reading syms from /home/kerman/projects/GoogleTestC/client/build/client
+--19186-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+--19186--   Considering /usr/lib/debug/.build-id/52/0e05878220fb2fc6d28ff46b63b3fd5d48e763.debug ..
+--19186--   .. build-id is valid
+--19186-- Reading syms from /usr/libexec/valgrind/memcheck-amd64-linux
+--19186--    object doesn't have a dynamic symbol table
+--19186-- Scheduler: using generic scheduler lock implementation.
+--19186-- Reading suppressions file: /usr/libexec/valgrind/default.supp
+==19186== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-19186-by-kerman-on-???
+==19186== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-19186-by-kerman-on-???
+==19186== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-19186-by-kerman-on-???
+==19186== 
+==19186== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==19186== don't want to do, unless you know exactly what you're doing,
+==19186== or are doing some strange experiment):
+==19186==   /usr/bin/vgdb --pid=19186 ...command...
+==19186== 
+==19186== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==19186==   /path/to/gdb build/client
+==19186== and then give GDB the following command
+==19186==   target remote | /usr/bin/vgdb --pid=19186
+==19186== --pid is optional if only one valgrind process is running
+==19186== 
+--19186-- REDIR: 0x4028b00 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c2e1a (???)
+--19186-- REDIR: 0x40272b0 (ld-linux-x86-64.so.2:index) redirected to 0x580c2e34 (???)
+--19186-- Reading syms from /usr/libexec/valgrind/vgpreload_core-amd64-linux.so
+--19186-- Reading syms from /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so
+==19186== WARNING: new redirection conflicts with existing -- ignoring it
+--19186--     old: 0x04028b00 (strlen              ) R-> (0000.0) 0x580c2e1a ???
+--19186--     new: 0x04028b00 (strlen              ) R-> (2007.0) 0x0484f340 strlen
+--19186-- REDIR: 0x40274e0 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4850460 (strcmp)
+--19186-- REDIR: 0x4026910 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4853cd0 (mempcpy)
+--19186-- Reading syms from /usr/lib/x86_64-linux-gnu/libc.so.6
+--19186--   Considering /usr/lib/debug/.build-id/27/4eec488d230825a136fa9c4d85370fed7a0a5e.debug ..
+--19186--   .. build-id is valid
+--19186-- REDIR: 0x4028ca0 (ld-linux-x86-64.so.2:strncmp) redirected to 0x484fc90 (strncmp)
+--19186-- REDIR: 0x4922050 (libc.so.6:strnlen) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49220e0 (libc.so.6:strpbrk) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49201a0 (libc.so.6:strcmp) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49393b0 (libc.so.6:wcsnlen) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491f290 (libc.so.6:memset) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4938b20 (libc.so.6:wcslen) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49a43f0 (libc.so.6:__memcpy_chk) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491f200 (libc.so.6:memrchr) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4939350 (libc.so.6:wcsncpy) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491e720 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49378e0 (libc.so.6:wcschr) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4920090 (libc.so.6:index) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4922110 (libc.so.6:rindex) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4937990 (libc.so.6:wcscmp) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491f4b0 (libc.so.6:stpncpy) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4945eb0 (libc.so.6:wmemchr) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4921ef0 (libc.so.6:strncmp) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491f510 (libc.so.6:strcasecmp) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4921310 (libc.so.6:strcspn) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49388f0 (libc.so.6:wcscpy) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4920020 (libc.so.6:strcat) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4921df0 (libc.so.6:strncasecmp_l) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4920110 (libc.so.6:strchrnul) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491e630 (libc.so.6:bcmp) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49212a0 (libc.so.6:strcpy) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491f5b0 (libc.so.6:strcasecmp_l) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4921cc0 (libc.so.6:strlen) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4921f90 (libc.so.6:strncpy) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4945f30 (libc.so.6:wmemcmp) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49a4510 (libc.so.6:__memmove_chk) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+==19186== WARNING: new redirection conflicts with existing -- ignoring it
+--19186--     old: 0x049f5a10 (__memcpy_chk_avx_una) R-> (2030.0) 0x04853dd0 __memcpy_chk
+--19186--     new: 0x049f5a10 (__memcpy_chk_avx_una) R-> (2024.0) 0x04853740 __memmove_chk
+--19186-- REDIR: 0x491f440 (libc.so.6:stpcpy) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491efc0 (libc.so.6:memmove) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+==19186== Preferring higher priority redirection:
+--19186--     old: 0x049f5a40 (__memcpy_avx_unalign) R-> (2018.0) 0x04851580 __memcpy_avx_unaligned_erms
+--19186--     new: 0x049f5a40 (__memcpy_avx_unalign) R-> (2018.1) 0x04852d60 memmove
+--19186-- REDIR: 0x491e5b0 (libc.so.6:memchr) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49222e0 (libc.so.6:strspn) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x491f0e0 (libc.so.6:mempcpy) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x4921d50 (libc.so.6:strncasecmp) redirected to 0x483d1c0 (_vgnU_ifunc_wrapper)
+--19186-- REDIR: 0x49fa630 (libc.so.6:__strrchr_avx2) redirected to 0x484ed20 (rindex)
+--19186-- REDIR: 0x49fa360 (libc.so.6:__strnlen_avx2) redirected to 0x484f1c0 (strnlen)
+--19186-- REDIR: 0x49f8780 (libc.so.6:__strlen_avx2) redirected to 0x484f220 (strlen)
+--19186-- REDIR: 0x49f5a40 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x4852d60 (memmove)
+--19186-- REDIR: 0x491b7a0 (libc.so.6:calloc) redirected to 0x484d8a0 (calloc)
+--19186-- REDIR: 0x49f6440 (libc.so.6:__memset_avx2_unaligned_erms) redirected to 0x4852c50 (memset)
+--19186-- REDIR: 0x49f5a00 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x48538d0 (mempcpy)
+--19186-- REDIR: 0x491ad30 (libc.so.6:free) redirected to 0x4849820 (free)
+--19186-- REDIR: 0x491a650 (libc.so.6:malloc) redirected to 0x48467b0 (malloc)
+--19186-- REDIR: 0x49f7ba0 (libc.so.6:__strchr_avx2) redirected to 0x484ef00 (index)
+--19186-- REDIR: 0x49f5040 (libc.so.6:__memchr_avx2) redirected to 0x48504e0 (memchr)
+--19186-- REDIR: 0x49f7fd0 (libc.so.6:__strcmp_avx2) redirected to 0x4850360 (strcmp)
+--19186-- REDIR: 0x49f5a10 (libc.so.6:__memcpy_chk_avx_unaligned_erms) redirected to 0x4853dd0 (__memcpy_chk)
+--19186-- REDIR: 0x49f9860 (libc.so.6:__strncmp_avx2) redirected to 0x484fab0 (strncmp)
+--19186-- REDIR: 0x49f8900 (libc.so.6:__strncasecmp_avx2) redirected to 0x484fdd0 (strncasecmp)
+--19186-- REDIR: 0x49f7de0 (libc.so.6:__strchrnul_avx2) redirected to 0x48537b0 (strchrnul)
+--19186-- REDIR: 0x4a17b50 (libc.so.6:__strpbrk_sse42) redirected to 0x4853fc0 (strpbrk)
+--19186-- REDIR: 0x49f6e80 (libc.so.6:__strcasecmp_avx2) redirected to 0x484fcf0 (strcasecmp)
+--19186-- REDIR: 0x491b0a0 (libc.so.6:realloc) redirected to 0x484db00 (realloc)
+==19186== Conditional jump or move depends on uninitialised value(s)
+==19186==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19186==    by 0x4921C6F: strlcpy (strlcpy.c:24)
+==19186==    by 0x10ECA7: xmitMsg (client.c:267)
+==19186==    by 0x10DD92: main (client.c:87)
+==19186==  Uninitialised value was created by a stack allocation
+==19186==    at 0x10D9D9: main (client.c:57)
+==19186== 
+--19186-- REDIR: 0x49f52e0 (libc.so.6:__memcmp_avx2_movbe) redirected to 0x4852480 (bcmp)
+--19186-- REDIR: 0x49f7890 (libc.so.6:__strcat_avx2) redirected to 0x484ef30 (strcat)
+==19186== 
+==19186== HEAP SUMMARY:
+==19186==     in use at exit: 0 bytes in 0 blocks
+==19186==   total heap usage: 224 allocs, 224 frees, 276,052 bytes allocated
+==19186== 
+==19186== All heap blocks were freed -- no leaks are possible
+==19186== 
+==19186== ERROR SUMMARY: 27 errors from 1 contexts (suppressed: 0 from 0)
+==19186== 
+==19186== 27 errors in context 1 of 1:
+==19186== Conditional jump or move depends on uninitialised value(s)
+==19186==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19186==    by 0x4921C6F: strlcpy (strlcpy.c:24)
+==19186==    by 0x10ECA7: xmitMsg (client.c:267)
+==19186==    by 0x10DD92: main (client.c:87)
+==19186==  Uninitialised value was created by a stack allocation
+==19186==    at 0x10D9D9: main (client.c:57)
+==19186== 
+==19186== ERROR SUMMARY: 27 errors from 1 contexts (suppressed: 0 from 0)

@@ -1,0 +1,14 @@
+MIME-Version: 1.0
+Subject: Payment Acknowledgement: Customer Id 2
+From: <noreply@finance.kbtest.com.au>
+To: Name Lastname <kbtest2@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Name Lastname,
+Thank you for your payment of 100.00 on 23Dec2023
+Your receipt number is R123456
+
+Kind Regards,
+The team at kbtest
+
+This is an auto-generated acknowledgement. Please do not reply to this mail.
