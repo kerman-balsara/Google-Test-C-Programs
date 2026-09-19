@@ -1,0 +1,19 @@
+echo $(ls -t | head -n 1)
+?log:
+?log:+T
+?sys:date,pwd,time
+?sys:who,whoami,locale
+?sys:date,pwd,time
+?sys:who,whoami,locale
+curl -sS -X GET -H "Content-Type: application/json" http://localhost:3000/departments
+curl -sS -c cookies.txt -X POST -H "Content-Type: application/json" -d '{"id": "kerman", "pwd": "kb"}' http://localhost:64000/appcomposer/login
+curl -sS -b cookies.txt -X GET -H "Content-Type: application/json" http://localhost:64000/appcomposer/hero/list
+curl -sS -b cookies.txt -X GET -H "Content-Type: application/json" http://localhost:64000/appcomposer/country/list
+curl -sS -b cookies.txt -X GET -H "Content-Type: application/json" http://localhost:64000/appcomposer/hero/get?id=13
+curl -sS -b cookies.txt -X POST -H "Content-Type: application/json" -d '{"ccNo": "4111111111111111"}' http://localhost:64000/appcomposer/ccpmt/update
+curl -sS -b cookies.txt -X POST -H "Content-Type: application/json" http://localhost:64000/appcomposer/logout
+?log:-T
+
+
+
+

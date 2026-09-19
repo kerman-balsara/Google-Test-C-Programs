@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/kerman/projects/GoogleTestC/mergegcov/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/mergegcov.dir/mergegcov.c.o -c /home/kerman/projects/GoogleTestC/mergegcov/mergegcov.c",
+  "file": "/home/kerman/projects/GoogleTestC/mergegcov/mergegcov.c",
+  "output": "CMakeFiles/mergegcov.dir/mergegcov.c.o"
+}
+]

@@ -1,0 +1,109 @@
+./cipher/iopersoncipher.c.gcov:    #####:   20:int DbPersonPostReadDecrypt(const person_r * const person,
+./cipher/iopersoncipher.c.gcov:    #####:   24:    return(0);
+./cipher/iopmttxncipher.c.gcov:    #####:   20:int DbPmttxnPostReadDecrypt(const pmttxn_r * const pmttxn,
+./cipher/iopmttxncipher.c.gcov:    #####:   24:    return(0);
+./dbio/ioperson.c.gcov:    #####:   88:        return(ret);
+./dbio/iopersonrtns.c.gcov:    #####:   18:int DbPersonSelectKey(const int id, person_r * const person)
+./dbio/iopersonrtns.c.gcov:    #####:   20:    person->id = id;
+./dbio/iopersonrtns.c.gcov:    #####:   22:    return(1);
+./dbio/iopmttxn.c.gcov:    #####:   87:        return(ret);
+./dbio/iopmttxnrtns.c.gcov:    #####:   18:int DbPmttxnSelectKey(const int id, const int seqNo, pmttxn_r * const pmttxn)
+./dbio/iopmttxnrtns.c.gcov:    #####:   20:    pmttxn->id = id;
+./dbio/iopmttxnrtns.c.gcov:    #####:   21:    pmttxn->seqNo = seqNo;
+./dbio/iopmttxnrtns.c.gcov:    #####:   24:    return(1);
+./dbio/iorecprmrtns.c.gcov:    #####:   27:int DbRecprmSelectKey(const string_t id[SZ_RECPRM_ID + 1], recprm_r * const recprm)
+./dbio/iorecprmrtns.c.gcov:    #####:   29:    strlcpy(recprm->id, id, SZ_RECPRM_ID + 1);
+./dbio/iorecprmrtns.c.gcov:    #####:   31:    return(1);
+./library/socketrecv.c.gcov:    #####:  143:int SocketRecvByServer(constr_t caller,
+./library/socketrecv.c.gcov:    #####:  153:        bytesRead = llrecv(fd, readBuf, sizeof(readBuf), 0);
+./library/socketrecv.c.gcov:    #####:  154:        if (bytesRead > 0) break;
+./library/socketrecv.c.gcov:    #####:  155:        if (bytesRead == 0)
+./library/socketrecv.c.gcov:    #####:  157:            LogInfoF("%s: fd %d: Disconnect received", caller, fd);
+./library/socketrecv.c.gcov:    #####:  158:            MemFree(caller, msg);
+./library/socketrecv.c.gcov:    #####:  159:            *msgLen = 0;
+./library/socketrecv.c.gcov:    #####:  160:            return(1);
+./library/socketrecv.c.gcov:    #####:  163:        if (errno == EINTR || errno == EAGAIN)
+./library/socketrecv.c.gcov:    #####:  164:            continue;
+./library/socketrecv.c.gcov:    #####:  166:        if (errno == ECONNRESET)
+./library/socketrecv.c.gcov:    #####:  168:            LogInfoF("%s: fd %d: Reset received", caller, fd);
+./library/socketrecv.c.gcov:    #####:  169:            MemFree(caller, msg);
+./library/socketrecv.c.gcov:    #####:  170:            *msgLen = 0;
+./library/socketrecv.c.gcov:    #####:  171:            return(1);
+./library/socketrecv.c.gcov:    #####:  174:        SysExit(__func__, errno, SYSCALL_RECV);
+./library/socketrecv.c.gcov:    #####:  177:    MemRealloc(caller, msg, *msgLen + bytesRead);
+./library/socketrecv.c.gcov:    #####:  178:    memcpy(*msg + *msgLen, readBuf, bytesRead);
+./library/socketrecv.c.gcov:    #####:  179:    *msgLen += bytesRead;
+./library/socketrecv.c.gcov:    #####:  181:    return(0);
+./library/socketrecv.c.gcov:    #####:   55:                LogInfoF("%s: fd %d: POLLHUP received", caller, fd);
+./library/socketrecv.c.gcov:    #####:   56:                break;
+./library/tcprtns.c.gcov:    #####:  187:                LogPkgTraceF(LOGPKG_WIRE, "  errno %d [%s]", errno, strerror(errno));
+./programs/receipt.c.gcov:    #####:  101:        return(ret);
+./programs/receipt.c.gcov:       2*:  102:    if (!createFile) return(0);
+./programs/receipt.c.gcov:    #####:   93:        return(ret);
+./programs/receipt.c.gcov:    #####:   96:        return(ret);
+./programs/receiptval.c.gcov:       4*:   78:    if (ret < 0) return(ret);
+./programs/receiptval.c.gcov:       5*:   69:    if (ret < 0) return(ret);
+./programs/receiptval.c.gcov:       6*:   57:    if (ret < 0) return(ret);
+./programs/receiptval.c.gcov:    #####:   66:        return(ret);
+./utils/fmtstr.c.gcov:    #####:   48:        int sysErrNo = errno;
+./utils/fmtstr.c.gcov:    #####:   49:        SysExit(__func__, sysErrNo, SYSCALL_VSNPRINTF);
+./utils/llfcntl.c.gcov:    #####:   11:    return(fcntl(fd, op, flags));
+./utils/llfcntl.c.gcov:    #####:    9:int llfcntl(int fd, int op, int flags)
+./utils/llpoll.c.gcov:    #####:   11:    return(poll(fds, nfds, timeout));
+./utils/llpoll.c.gcov:    #####:    9:int llpoll(struct pollfd *fds, nfds_t nfds, int timeout)
+./utils/llsocket.c.gcov:    #####:   13:int llsocket(int domain, int type, int protocol)
+./utils/llsocket.c.gcov:    #####:   15:    return(socket(domain, type, protocol));
+./utils/llsocket.c.gcov:    #####:   18:int llbind(int sockfd, const struct sockaddr * const addr, socklen_t addrlen)
+./utils/llsocket.c.gcov:    #####:   20:    return(bind(sockfd, addr, addrlen));
+./utils/llsocket.c.gcov:    #####:   23:int lllisten(int sockfd, int backlog)
+./utils/llsocket.c.gcov:    #####:   25:    return(listen(sockfd, backlog));
+./utils/llsocket.c.gcov:    #####:   28:int llconnect(int sockfd, const struct sockaddr *addr, socklen_t addrlen)
+./utils/llsocket.c.gcov:    #####:   30:    return(connect(sockfd, addr, addrlen));
+./utils/llsocket.c.gcov:    #####:   33:ssize_t llsend(const int fd, const char * const buf, const size_t buflen, const int flags)
+./utils/llsocket.c.gcov:    #####:   35:    return(send(fd, buf, buflen, flags));
+./utils/llsocket.c.gcov:    #####:   38:ssize_t llrecv(const int fd, char * const buf, const size_t buflen, const int flags)
+./utils/llsocket.c.gcov:    #####:   40:    return(recv(fd, buf, buflen, flags));
+./utils/llsocket.c.gcov:    #####:   43:int llgetsockoptSocketError(int sockfd, int * so_error, socklen_t * so_len)
+./utils/llsocket.c.gcov:    #####:   45:    return(getsockopt(sockfd, SOL_SOCKET, SO_ERROR, so_error, so_len));
+./utils/llsocket.c.gcov:    #####:   48:int llshutdown(int sockfd, int how)
+./utils/llsocket.c.gcov:    #####:   50:    return(shutdown(sockfd, how));
+./utils/llstdio.c.gcov:    #####:   58:void llclearerr(FILE * fPtr)
+./utils/llstdio.c.gcov:    #####:   60:    return(clearerr(fPtr));
+./utils/llunistd.c.gcov:    #####:   11:    return(close(fd));
+./utils/llunistd.c.gcov:    #####:    9:int llclose(int fd)
+./utils/logpkgrtns.c.gcov:    #####:  133:        int sysErrNo = errno;
+./utils/logpkgrtns.c.gcov:    #####:  134:        SysExit(__func__, sysErrNo, SYSCALL_VSNPRINTF);
+./utils/logrtns.c.gcov:    #####:  181:        int sysErrNo = errno;
+./utils/logrtns.c.gcov:    #####:  182:        SysExit(__func__, sysErrNo, SYSCALL_VSNPRINTF);
+./utils/logrtns.c.gcov:    #####:  222:        int sysErrNo = errno;
+./utils/logrtns.c.gcov:    #####:  223:        SysExit(__func__, sysErrNo, SYSCALL_VSNPRINTF);
+./utils/logrtns.c.gcov:    #####:  263:        int sysErrNo = errno;
+./utils/logrtns.c.gcov:    #####:  264:        SysExit(__func__, sysErrNo, SYSCALL_VSNPRINTF);
+./utils/logrtns.c.gcov:    #####:  304:        int sysErrNo = errno;
+./utils/logrtns.c.gcov:    #####:  305:        SysExit(__func__, sysErrNo, SYSCALL_VSNPRINTF);
+./utils/logrtns.c.gcov:    #####:  338:    return(0);
+./utils/msglenrtns.c.gcov:    #####:   20:void MsgPrint(constr_t caller, const int fd, constr_t msglenInd, const char * msg, const int xmitLen, constr_t commType)
+./utils/msglenrtns.c.gcov:    #####:   22:    int startPos = MsgStartPos(msglenInd);
+./utils/msglenrtns.c.gcov:    #####:   23:    int msgLen = MsgLenFromXmitLen(msglenInd, xmitLen);
+./utils/msglenrtns.c.gcov:    #####:   25:    LogPkgTraceF(LOGPKG_WIRE, "%s: fd %d: Message %d bytes (%s %d bytes)", caller, fd, msgLen, commType, xmitLen);
+./utils/msglenrtns.c.gcov:    #####:   26:    LogPkgTraceF(LOGPKG_WIRE, "%s: fd %d: [%.*s]", caller, fd, msgLen, msg + startPos);
+./utils/msglenrtns.c.gcov:    #####:   27:}
+./utils/strutils.c.gcov:    #####:  159:        int sysErrNo = errno;
+./utils/strutils.c.gcov:    #####:  160:        SysExit(__func__, sysErrNo, SYSCALL_VSNPRINTF);
+./utils/sysexit.c.gcov:    #####:  149:    fprintf(stderr, "    Error desc: No description for error code %d\n", errCode);
+./utils/sysexit.c.gcov:    #####:  152:void SysSetPrintStack(const bool_t value)
+./utils/sysexit.c.gcov:    #####:  154:    PrintStack = value;
+./utils/sysexit.c.gcov:    #####:  155:}
+./utils/sysexit.c.gcov:    #####:  157:void SysPstack(void)
+./utils/sysexit.c.gcov:    #####:  159:    int pid = getpid();
+./utils/sysexit.c.gcov:    #####:  162:    snprintf(cmd, sizeof(cmd), "echo \"set pagination off\\nthread apply all backtrace\\nquit\\n\" | gdb --pid %d", pid);
+./utils/sysexit.c.gcov:    #####:  164:    FILE * fPtr = popen(cmd, "r");
+./utils/sysexit.c.gcov:    #####:  165:    if (fPtr == NULL)
+./utils/sysexit.c.gcov:    #####:  166:        return;
+./utils/sysexit.c.gcov:    #####:  169:    {
+./utils/sysexit.c.gcov:    #####:  171:        const string_t * result = fgets(message, SZ_SYSCMD_STR, fPtr);
+./utils/sysexit.c.gcov:    #####:  172:        if (result == NULL) break;
+./utils/sysexit.c.gcov:    #####:  173:        fprintf(stderr, "%s", result);
+./utils/sysexit.c.gcov:    #####:  175:    (void) pclose(fPtr);
+./utils/sysexit.c.gcov:      59*:  125:    if (ExitInProgress) return;
+./utils/sysexit.c.gcov:      59*:  134:    if (PrintStack) SysPstack();    

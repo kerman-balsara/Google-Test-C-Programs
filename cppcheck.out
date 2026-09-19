@@ -1,0 +1,393 @@
+Checking clientserver/bankclient.c ...
+1/110 files checked 1% done
+Checking clientserver/bankserver.c ...
+2/110 files checked 6% done
+Checking clientserver/dbclient.c ...
+3/110 files checked 8% done
+Checking clientserver/dbserver.c ...
+4/110 files checked 12% done
+Checking clientserver/myclient.c ...
+clientserver/myclient.c:263:27: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+            if (sockFd[0] == -1)
+                          ^
+clientserver/myclient.c:259:23: note: outer condition: sockFd[0]==-1
+        if (sockFd[0] == -1)
+                      ^
+clientserver/myclient.c:263:27: note: identical inner condition: sockFd[0]==-1
+            if (sockFd[0] == -1)
+                          ^
+5/110 files checked 15% done
+Checking clientserver/myserver.c ...
+6/110 files checked 25% done
+Checking master/src/app/main.c ...
+7/110 files checked 31% done
+Checking master/src/cipher/iopersoncipher.c ...
+8/110 files checked 31% done
+Checking master/src/cipher/iopmttxncipher.c ...
+9/110 files checked 31% done
+Checking master/src/dbio/ioperson.c ...
+10/110 files checked 32% done
+Checking master/src/dbio/iopersonrtns.c ...
+11/110 files checked 32% done
+Checking master/src/dbio/iopmttxn.c ...
+12/110 files checked 33% done
+Checking master/src/dbio/iopmttxnrtns.c ...
+13/110 files checked 33% done
+Checking master/src/dbio/iorecprm.c ...
+14/110 files checked 33% done
+Checking master/src/dbio/iorecprmrtns.c ...
+15/110 files checked 33% done
+Checking master/src/library/ccchecksum.c ...
+16/110 files checked 34% done
+Checking master/src/library/ccrtns.c ...
+17/110 files checked 34% done
+Checking master/src/library/errmsgrtns.c ...
+18/110 files checked 34% done
+Checking master/src/library/filertns.c ...
+19/110 files checked 34% done
+Checking master/src/library/fileutils.c ...
+20/110 files checked 35% done
+Checking master/src/library/pathstatus.c ...
+21/110 files checked 35% done
+Checking master/src/library/socketrecv.c ...
+22/110 files checked 36% done
+Checking master/src/library/socketsend.c ...
+23/110 files checked 37% done
+Checking master/src/library/syscmd.c ...
+24/110 files checked 37% done
+Checking master/src/library/tcprtns.c ...
+25/110 files checked 38% done
+Checking master/src/programs/payment.c ...
+26/110 files checked 38% done
+Checking master/src/programs/receipt.c ...
+27/110 files checked 40% done
+Checking master/src/programs/receiptval.c ...
+28/110 files checked 41% done
+Checking master/src/programs/receiptwrite.c ...
+29/110 files checked 41% done
+Checking master/src/utils/cmdrtns.c ...
+30/110 files checked 42% done
+Checking master/src/utils/csvrtns.c ...
+31/110 files checked 42% done
+Checking master/src/utils/cyclicstr.c ...
+32/110 files checked 42% done
+Checking master/src/utils/datmutils.c ...
+33/110 files checked 43% done
+Checking master/src/utils/fmtamt.c ...
+34/110 files checked 43% done
+Checking master/src/utils/fmtdate.c ...
+35/110 files checked 44% done
+Checking master/src/utils/fmtstr.c ...
+36/110 files checked 44% done
+Checking master/src/utils/llfcntl.c ...
+37/110 files checked 44% done
+Checking master/src/utils/llmemrtns.c ...
+38/110 files checked 44% done
+Checking master/src/utils/llpoll.c ...
+39/110 files checked 44% done
+Checking master/src/utils/llsocket.c ...
+40/110 files checked 44% done
+Checking master/src/utils/llstdio.c ...
+41/110 files checked 45% done
+Checking master/src/utils/llunistd.c ...
+42/110 files checked 45% done
+Checking master/src/utils/lnklstrtns.c ...
+43/110 files checked 46% done
+Checking master/src/utils/logcmds.c ...
+44/110 files checked 46% done
+Checking master/src/utils/logpkgcmds.c ...
+45/110 files checked 46% done
+Checking master/src/utils/logpkgrtns.c ...
+46/110 files checked 47% done
+Checking master/src/utils/logrtns.c ...
+47/110 files checked 49% done
+Checking master/src/utils/memrtns.c ...
+48/110 files checked 50% done
+Checking master/src/utils/msglenrtns.c ...
+49/110 files checked 51% done
+Checking master/src/utils/pthreadrtns.c ...
+50/110 files checked 52% done
+Checking master/src/utils/strutils.c ...
+51/110 files checked 53% done
+Checking master/src/utils/sysexit.c ...
+52/110 files checked 55% done
+Checking master/src/utils/thrinfo.c ...
+53/110 files checked 55% done
+Checking mergegcov/mergegcov.c ...
+54/110 files checked 57% done
+Checking test/library/ccchecksum.cpp ...
+55/110 files checked 57% done
+Checking test/library/ccrtns.cpp ...
+56/110 files checked 58% done
+Checking test/library/errmsgrtns.cpp ...
+57/110 files checked 58% done
+Checking test/library/filertns.cpp ...
+58/110 files checked 59% done
+Checking test/library/fileutils.cpp ...
+59/110 files checked 59% done
+Checking test/library/pathstatus.cpp ...
+60/110 files checked 60% done
+Checking test/library/syscmd.cpp ...
+61/110 files checked 60% done
+Checking test/library/tcprtns.cpp ...
+62/110 files checked 60% done
+Checking test/misc/structinit.cpp ...
+63/110 files checked 61% done
+Checking test/utils/cmdrtns.cpp ...
+64/110 files checked 62% done
+Checking test/utils/csvrtns.cpp ...
+65/110 files checked 62% done
+Checking test/utils/cyclicstr.cpp ...
+66/110 files checked 62% done
+Checking test/utils/datmutils.cpp ...
+67/110 files checked 63% done
+Checking test/utils/fmtamt.cpp ...
+68/110 files checked 64% done
+Checking test/utils/fmtdate.cpp ...
+69/110 files checked 64% done
+Checking test/utils/fmtstr.cpp ...
+70/110 files checked 64% done
+Checking test/utils/lnklstrtns.cpp ...
+test/utils/lnklstrtns.cpp:65:17: warning: The class 'LnkLstRemoveF' defines member function with name 'SetUpTestSuite' also defined in its parent class 'lnklstrtnsCommonF'. [duplInheritedMember]
+    static void SetUpTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:25:17: note: Parent function 'lnklstrtnsCommonF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:65:17: note: Derived function 'LnkLstRemoveF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:69:17: warning: The class 'LnkLstRemoveF' defines member function with name 'TearDownTestSuite' also defined in its parent class 'lnklstrtnsCommonF'. [duplInheritedMember]
+    static void TearDownTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:30:17: note: Parent function 'lnklstrtnsCommonF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:69:17: note: Derived function 'LnkLstRemoveF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:128:17: warning: The class 'LnkLstFreeF' defines member function with name 'SetUpTestSuite' also defined in its parent class 'lnklstrtnsCommonF'. [duplInheritedMember]
+    static void SetUpTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:25:17: note: Parent function 'lnklstrtnsCommonF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:128:17: note: Derived function 'LnkLstFreeF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:132:17: warning: The class 'LnkLstFreeF' defines member function with name 'TearDownTestSuite' also defined in its parent class 'lnklstrtnsCommonF'. [duplInheritedMember]
+    static void TearDownTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:30:17: note: Parent function 'lnklstrtnsCommonF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:132:17: note: Derived function 'LnkLstFreeF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+test/utils/lnklstrtns.cpp:39:32: style: C-style pointer casting [cstyleCast]
+            person_l * elem = (person_l *) MemAlloc("lnklstrtnsF", sizeof(person_l));
+                               ^
+test/utils/lnklstrtns.cpp:164:25: style: C-style pointer casting [cstyleCast]
+    person_l * elem1 = (person_l *) MemAlloc("LnkLstAll", sizeof(person_l));
+                        ^
+test/utils/lnklstrtns.cpp:167:25: style: C-style pointer casting [cstyleCast]
+    person_l * elem2 = (person_l *) MemAlloc("LnkLstAll", sizeof(person_l));
+                        ^
+71/110 files checked 65% done
+Checking test/utils/logcmds.cpp ...
+72/110 files checked 66% done
+Checking test/utils/logpkgcmds.cpp ...
+73/110 files checked 66% done
+Checking test/utils/logpkgrtns.cpp ...
+74/110 files checked 68% done
+Checking test/utils/logrtns.cpp ...
+75/110 files checked 70% done
+Checking test/utils/memrtns.cpp ...
+test/utils/memrtns.cpp:15:29: style: C-style pointer casting [cstyleCast]
+    person_r * personElem = (person_r *) MemAlloc("MemAllocFree", sizeof(person_r));
+                            ^
+test/utils/memrtns.cpp:26:15: style: C-style pointer casting [cstyleCast]
+    charPtr = (char *) MemAlloc("MemRellocFree", 4);
+              ^
+76/110 files checked 70% done
+Checking test/utils/msglenrtns.cpp ...
+test/utils/msglenrtns.cpp:202:15: style: C-style pointer casting [cstyleCast]
+    prevMsg = (char *) MemAlloc("caller", mgcdata.bytesRead);
+              ^
+test/utils/msglenrtns.cpp:250:15: style: C-style pointer casting [cstyleCast]
+    prevMsg = (char *) MemAlloc("caller", mgcdata.bytesRead);
+              ^
+77/110 files checked 72% done
+Checking test/utils/strutils.cpp ...
+78/110 files checked 75% done
+Checking test/utils/sysexit.cpp ...
+79/110 files checked 75% done
+Checking test/utils/thrinfo.cpp ...
+80/110 files checked 75% done
+Checking testfake/dbio/ioperson.cpp ...
+81/110 files checked 76% done
+Checking testfake/dbio/iopmttxn.cpp ...
+82/110 files checked 76% done
+Checking testfake/dbio/iorecprm.cpp ...
+83/110 files checked 76% done
+Checking testfake/misc/fakedfns.cpp ...
+84/110 files checked 77% done
+Checking testfake/programs/receipt.cpp ...
+testfake/programs/receipt.cpp:38:10: performance: inconclusive: Technically the member function 'receiptCommonF::TearDown' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:47:17: warning: The class 'ReceiptMainF' defines member function with name 'SetUpTestSuite' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:30:17: note: Parent function 'receiptCommonF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:47:17: note: Derived function 'ReceiptMainF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:51:17: warning: The class 'ReceiptMainF' defines member function with name 'TearDownTestSuite' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:34:17: note: Parent function 'receiptCommonF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:51:17: note: Derived function 'ReceiptMainF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:55:10: warning: The class 'ReceiptMainF' defines member function with name 'TearDown' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:38:10: note: Parent function 'receiptCommonF::TearDown'
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:55:10: note: Derived function 'ReceiptMainF::TearDown'
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:129:17: warning: The class 'receiptFileF' defines member function with name 'SetUpTestSuite' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:30:17: note: Parent function 'receiptCommonF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:129:17: note: Derived function 'receiptFileF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:133:17: warning: The class 'receiptFileF' defines member function with name 'TearDownTestSuite' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:34:17: note: Parent function 'receiptCommonF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:133:17: note: Derived function 'receiptFileF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:137:10: warning: The class 'receiptFileF' defines member function with name 'TearDown' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:38:10: note: Parent function 'receiptCommonF::TearDown'
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:137:10: note: Derived function 'receiptFileF::TearDown'
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:198:17: warning: The class 'receiptEmailF' defines member function with name 'SetUpTestSuite' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:30:17: note: Parent function 'receiptCommonF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:198:17: note: Derived function 'receiptEmailF::SetUpTestSuite'
+    static void SetUpTestSuite()
+                ^
+testfake/programs/receipt.cpp:202:17: warning: The class 'receiptEmailF' defines member function with name 'TearDownTestSuite' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:34:17: note: Parent function 'receiptCommonF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:202:17: note: Derived function 'receiptEmailF::TearDownTestSuite'
+    static void TearDownTestSuite()
+                ^
+testfake/programs/receipt.cpp:206:10: warning: The class 'receiptEmailF' defines member function with name 'TearDown' also defined in its parent class 'receiptCommonF'. [duplInheritedMember]
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:38:10: note: Parent function 'receiptCommonF::TearDown'
+    void TearDown()
+         ^
+testfake/programs/receipt.cpp:206:10: note: Derived function 'receiptEmailF::TearDown'
+    void TearDown()
+         ^
+85/110 files checked 79% done
+Checking testfake/programs/receiptval.cpp ...
+86/110 files checked 80% done
+Checking testfake/programs/receiptwrite.cpp ...
+87/110 files checked 81% done
+Checking testfake/programs/wrapreceipt.c ...
+88/110 files checked 82% done
+Checking testfakedbrealfile/misc/fakedfns.cpp ...
+89/110 files checked 82% done
+Checking testfakedbrealfile/programs/receipt.cpp ...
+90/110 files checked 82% done
+Checking testhelper/persondata.c ...
+91/110 files checked 82% done
+Checking testhelper/pmttxndata.c ...
+92/110 files checked 83% done
+Checking testhelper/recprmdata.c ...
+93/110 files checked 83% done
+Checking testmock/dbio/ioperson.cpp ...
+94/110 files checked 83% done
+Checking testmock/dbio/wrapioperson.c ...
+95/110 files checked 83% done
+Checking testmock/library/filertns.cpp ...
+96/110 files checked 84% done
+Checking testmock/library/pathstatus.cpp ...
+97/110 files checked 85% done
+Checking testmock/library/socketrecv.cpp ...
+testmock/library/socketrecv.cpp:587:39: warning: Possible null pointer dereference: prevMsg [nullPointer]
+    EXPECT_EQ(0, memcmp(ydata.expMsg, prevMsg, prevMsgLen));
+                                      ^
+testmock/library/socketrecv.cpp:554:22: note: Assignment 'prevMsg=NULL', assigned value is 0
+    char * prevMsg = NULL;
+                     ^
+testmock/library/socketrecv.cpp:567:27: note: Assuming condition is false
+        for (int i = 0; i < ydata.maxRecvCalls; i++)
+                          ^
+testmock/library/socketrecv.cpp:587:39: note: Null pointer dereference
+    EXPECT_EQ(0, memcmp(ydata.expMsg, prevMsg, prevMsgLen));
+                                      ^
+testmock/library/socketrecv.cpp:552:9: style: The scope of the variable 'fd' can be reduced. [variableScope]
+    int fd = 99;
+        ^
+98/110 files checked 89% done
+Checking testmock/library/socketsend.cpp ...
+99/110 files checked 91% done
+Checking testmock/library/syscmd.cpp ...
+100/110 files checked 92% done
+Checking testmock/library/tcprtns.cpp ...
+101/110 files checked 98% done
+Checking testmock/library/wrapfilertns.c ...
+102/110 files checked 98% done
+Checking testmock/library/wrappathstatus.c ...
+103/110 files checked 98% done
+Checking testmock/library/wrapsocketrecv.c ...
+104/110 files checked 98% done
+Checking testmock/library/wrapsocketsend.c ...
+105/110 files checked 98% done
+Checking testmock/library/wrapsyscmd.c ...
+106/110 files checked 98% done
+Checking testmock/library/wraptcprtns.c ...
+107/110 files checked 98% done
+Checking testmock/misc/mockedfns.cpp ...
+108/110 files checked 99% done
+Checking testmock/utils/memrtns.cpp ...
+109/110 files checked 99% done
+Checking testmock/utils/wrapmemrtns.c ...
+110/110 files checked 100% done
+master/src/utils/llstdio.c:53:0: style: The function 'llvsnprintf' is never used. [unusedFunction]
+int llvsnprintf(string_t * str, size_t maxlen, constr_t format, va_list arg)
+^
+test/misc/structinit.cpp:24:0: style: The function 'CharIsInit' is never used. [unusedFunction]
+testing::AssertionResult CharIsInit(const char * expr1,
+^
+nofile:0:0: information: Active checkers: 173/592 (use --checkers-report=<filename> to see details) [checkersReport]
+
